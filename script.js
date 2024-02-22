@@ -2,7 +2,7 @@ const containerVideos = document.querySelector('.videos__container')
 
 async function buscarEMostrarVideos() {
     try {
-        const busca = await fetch("https://raw.githubusercontent.com/GustavoBento/projeto-vidflow/main/backend/videos.json")
+        const busca = await fetch("https://gustavobento.github.io/projeto-vidflow/backend/videos.json")
         const videos = await busca.json()
             videos.forEach(video => {
                 if(video.categoria == ''){
