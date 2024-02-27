@@ -243,6 +243,7 @@ body {
     background-color: var(--branco);
     padding: 0 20px;
     top: 80px;
+    position: fixed;
     right: 0;
     left: 0;
     /* transition: transform 0.5s ease-in-out;
