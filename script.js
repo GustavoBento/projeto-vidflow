@@ -1,10 +1,11 @@
 const containerVideos = document.querySelector('.videos__container')
-const urlDaAPI = "https://mp62eda71614a0fea8b6.free.beeceptor.com/data"
+const urlDaAPI = "https://gustavobento.github.io/projeto-vidflow/backend/videos.json"
 
 async function buscarEMostrarVideos() {
     try {
         const busca = await fetch(urlDaAPI)
         const videos = await busca.json()
+        console.log(videos)
             videos.forEach(video => {
                 if(video.categoria == ''){
                     throw new Error('Video nao tem categoria')
