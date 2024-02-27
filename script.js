@@ -2,7 +2,7 @@ const containerVideos = document.querySelector('.videos__container')
 
 async function buscarEMostrarVideos() {
     try {
-        const busca = await fetch("https://mp62eda71614a0fea8b6.free.beeceptor.com")
+        const busca = await fetch("https://mp62eda71614a0fea8b6.free.beeceptor.com/data")
         const videos = await busca.json()
             videos.forEach(video => {
                 if(video.categoria == ''){
