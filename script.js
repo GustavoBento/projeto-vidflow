@@ -1,5 +1,5 @@
 const containerVideos = document.querySelector('.videos__container')
-const urlDaAPI = "https://gustavobento.github.io/projeto-vidflow/backend/videos.json"
+const urlDaAPI = "https://raw.githubusercontent.com/GustavoBento/projeto-vidflow/main/backend/videos.json"
 
 async function buscarEMostrarVideos() {
     try {
