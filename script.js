@@ -4,7 +4,7 @@ const urlDaAPI = "https://mp62eda71614a0fea8b6.free.beeceptor.com/data"
 async function buscarEMostrarVideos() {
     try {
         const busca = await fetch(urlDaAPI)
-        const videos = await busca.json()
+        let videos = await busca.json()
             videos.forEach(video => {
                 if(video.categoria == ''){
                     throw new Error('Video nao tem categoria')
