@@ -4,7 +4,7 @@ const urlDaAPI = "https://raw.githubusercontent.com/GustavoBento/projeto-vidflow
 async function buscarEMostrarVideos() {
     try {
         const busca = await fetch(urlDaAPI)
-        const videos = await busca.json()
+        const {videos} = await busca.json()
         console.log(videos)
             videos.forEach(video => {
                 if(video.categoria == ''){
